@@ -1,11 +1,264 @@
-<!DOCTYPE html> 
-<html>
-<head> 
-<title>my first website</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mama Pearl's Kitchen - fresh local food in Kampala">
+  <title>Mama Pearl's Kitchen | Home</title>
+
+  <!-- This line connects the HTML to the CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Hello world </h1>
-<p>welcom to my website.</p>
+  <header id="top">
+    <h1>Mama Pearl's Kitchen</h1>
+    <p><em>Fresh local food, cooked with love since 2010.</em></p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#specials">Specials</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <img src="images/restaurant.jpg" alt="Outdoor tables at our restaurant">
+      <img src="images/fish.jpg">
+      <img src="images/fruit-salad.jpg">
+      <img src="images/luwombo.jpg">
+      <img src="images/samosa.jpg">
+      <p>
+        Welcome to <strong>Mama Pearl's Kitchen</strong>, where every meal feels like
+        <em>home</em>. We use only <mark>fresh, locally grown</mark> ingredients.
+      </p>
+      <p>
+        Our story began in a tiny kitchen with one pot and a big dream.<br>
+        Today, we serve over 200 guests every week.
+      </p>
+      <h3>Our Promise</h3>
+      <p>Good food, fair prices, and a warm welcome.</p>
+      <h4>Our Chefs</h4>
+      <p>Trained locally and abroad, led by Chef Pearl Nakato.</p>
+      <blockquote>
+        <p>"Cooking is love made visible."</p>
+        <footer>— <cite>Chef Pearl Nakato</cite></footer>
+      </blockquote>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+
+      <article>
+        <h3>Starters</h3>
+        <figure>
+          <img src="images/samosas.jpg" alt="A plate of golden samosas">
+          <figcaption>Crispy beef samosas served with chilli dip.</figcaption>
+        </figure>
+        <ul>
+          <li>Beef Samosas</li>
+          <li>Vegetable Spring Rolls</li>
+          <li>Grilled Corn on the Cob</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Main Dishes</h3>
+        <figure>
+          <img src="images/luwombo.jpg" alt="Chicken luwombo steamed in banana leaves">
+          <figcaption>Chicken Luwombo, steamed in banana leaves.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/tilapia.jpg" alt="Grilled tilapia fish">
+          <figcaption>Grilled Tilapia, fresh from the lake.</figcaption>
+        </figure>
+        <ul>
+          <li>Chicken Luwombo</li>
+          <li>Grilled Tilapia with Rice</li>
+          <li>Matooke with Groundnut Sauce</li>
+          <li>Rolex (chapati &amp; egg wrap)</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Desserts</h3>
+        <figure>
+          <img src="images/fruit-salad.jpg" alt="A bowl of fresh fruit salad">
+          <figcaption>Fresh tropical fruit salad.</figcaption>
+        </figure>
+        <ul>
+          <li>Fruit Salad</li>
+          <li>Banana Fritters</li>
+          <li>Vanilla Ice Cream</li>
+        </ul>
+      </article>
+
+      <h3>How to Order</h3>
+      <ol>
+        <li>Choose a table.</li>
+        <li>Pick your meal from the menu.</li>
+        <li>Tell your waiter your order.</li>
+        <li>Enjoy your food!</li>
+      </ol>
+
+      <h3>Menu Glossary</h3>
+      <dl>
+        <dt>Luwombo</dt>
+        <dd>A traditional dish steamed inside banana leaves.</dd>
+        <dt>Matooke</dt>
+        <dd>Steamed, mashed green bananas.</dd>
+        <dt>Rolex</dt>
+        <dd>A chapati rolled around a fried egg and vegetables.</dd>
+      </dl>
+    </section>
+
+    <section id="prices">
+      <h2>Price List</h2>
+      <table>
+        <caption>Every dish on our menu</caption>
+        <thead>
+          <tr><th>Dish</th><th>Category</th><th>Price (UGX)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Beef Samosas</td><td>Starter</td><td>5,000</td></tr>
+          <tr><td>Vegetable Spring Rolls</td><td>Starter</td><td>6,000</td></tr>
+          <tr><td>Grilled Corn on the Cob</td><td>Starter</td><td>4,000</td></tr>
+          <tr><td>Chicken Luwombo</td><td>Main</td><td>25,000</td></tr>
+          <tr><td>Grilled Tilapia with Rice</td><td>Main</td><td>30,000</td></tr>
+          <tr><td>Matooke with Groundnut Sauce</td><td>Main</td><td>15,000</td></tr>
+          <tr><td>Rolex (chapati &amp; egg wrap)</td><td>Main</td><td>5,000</td></tr>
+          <tr><td>Fruit Salad</td><td>Dessert</td><td>8,000</td></tr>
+          <tr><td>Banana Fritters</td><td>Dessert</td><td>6,000</td></tr>
+          <tr><td>Vanilla Ice Cream</td><td>Dessert</td><td>7,000</td></tr>
+        </tbody>
+      </table>
+      <p><small>Prices include 18% VAT.<sup>*</sup> Old price of Luwombo: <del>UGX 28,000</del>.</small></p>
+    </section>
+
+    <section id="specials">
+      <h2>Weekly Specials</h2>
+      <aside>
+        <h3>Special Offer!</h3>
+        <p>Every <time datetime="2026-11-13">Friday</time> enjoy <strong>2 Rolex for the price of 1</strong>.</p>
+        <p>Order by phone on <a href="tel:+256772123456">+256 772 123 456</a>.</p>
+        <p>All our meals are <abbr title="Fresh Ingredients Only">FIO</abbr> certified.</p>
+      </aside>
+    </section>
+
+    <section id="hours">
+      <h2>Opening Hours &amp; Location</h2>
+      <ul>
+        <li>Monday – Friday: <time datetime="08:00">8:00 AM</time> – <time datetime="22:00">10:00 PM</time></li>
+        <li>Saturday – Sunday: <time datetime="10:00">10:00 AM</time> – <time datetime="23:00">11:00 PM</time></li>
+      </ul>
+      <address>
+        Mama Pearl's Kitchen<br>
+        Plot 12, Kampala Road<br>
+        Kampala, Uganda
+      </address>
+    </section>
+
+    <section id="reviews">
+      <h2>What Our Customers Say</h2>
+      <article>
+        <h3>"Best luwombo in town!"</h3>
+        <p><strong>Sarah K.</strong> — <time datetime="2026-10-02">2 October 2026</time></p>
+        <p>The chicken was so tender and the service was wonderful.</p>
+      </article>
+      <article>
+        <h3>"A great place for families"</h3>
+        <p><strong>David M.</strong> — <time datetime="2026-09-15">15 September 2026</time></p>
+        <p>The kids loved the fruit salad. We will be back!</p>
+      </article>
+    </section>
+
+    <section id="reserve">
+      <h2>Reserve a Table</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Your Details</legend>
+          <p><label for="name">Full name:</label> <input type="text" id="name" name="name" required></p>
+          <p><label for="email">Email:</label> <input type="email" id="email" name="email" required></p>
+          <p><label for="phone">Phone:</label> <input type="tel" id="phone" name="phone"></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Booking Details</legend>
+          <p><label for="date">Date:</label> <input type="date" id="date" name="date"></p>
+          <p><label for="time">Time:</label> <input type="time" id="time" name="time"></p>
+          <p><label for="guests">Guests:</label> <input type="number" id="guests" name="guests" min="1" max="20" value="2"></p>
+          <p>
+            <label for="seating">Seating:</label>
+            <select id="seating" name="seating">
+              <option value="indoor">Indoor</option>
+              <option value="outdoor">Outdoor</option>
+              <option value="private">Private room</option>
+            </select>
+          </p>
+
+          <p>Occasion:
+            <input type="radio" id="casual" name="occasion" value="casual" checked> <label for="casual">Casual</label>
+            <input type="radio" id="birthday" name="occasion" value="birthday"> <label for="birthday">Birthday</label>
+            <input type="radio" id="business" name="occasion" value="business"> <label for="business">Business</label>
+          </p>
+
+          <p>Extras:
+            <input type="checkbox" id="cake" name="extras" value="cake"> <label for="cake">Cake</label>
+            <input type="checkbox" id="highchair" name="extras" value="highchair"> <label for="highchair">High chair</label>
+            <input type="checkbox" id="vegetarian" name="extras" value="vegetarian"> <label for="vegetarian">Vegetarian</label>
+          </p>
+
+          <p>
+            <label for="notes">Special requests:</label><br>
+            <textarea id="notes" name="notes" rows="4" placeholder="Allergies, celebrations, etc."></textarea>
+          </p>
+        </fieldset>
+
+        <button type="submit">Book Now</button>
+        <button type="reset">Clear</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you. Call, message or visit us.</p>
+      <ul>
+        <li>Phone: <a href="tel:+256772123456">+256 772 123 456</a></li>
+        <li>Second line: <a href="tel:+256752654321">+256 752 654 321</a></li>
+        <li>WhatsApp: <a href="https://wa.me/256772123456" target="_blank">+256 772 123 456</a></li>
+        <li>Email: <a href="mailto:mamapearlskitchen@gmail.com">mamapearlskitchen@gmail.com</a></li>
+        <li>Address: Plot 12, Kampala Road, Kampala, Uganda</li>
+        <li>Instagram: @mamapearlskitchen</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mama Pearl's Kitchen. All rights reserved.</p>
+    <p><small><sup>*</sup> Prices may change without notice.</small></p>
+    <p><a href="#top">Back to top</a></p>
+    <p><small>
+      Photo credits (Wikimedia Commons):
+      restaurant by Wilfredor (CC0);
+      samosas by Swathi sri srinivasa raghavan (CC0);
+      chicken luwombo by Namuganyi (CC BY-SA 4.0);
+      grilled tilapia by Umuhiera (CC0);
+      fruit salad by Gaurav Dhwaj Khadka (CC BY-SA 4.0).
+    </small></p>
+  </footer>
+
 </body>
 </html>

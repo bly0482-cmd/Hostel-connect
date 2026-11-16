@@ -1,1 +1,296 @@
- 
+* ===== Colors used everywhere (change them here) ===== */
+:root {
+  --brown: #8a3b12;
+  --orange: #c2571a;
+  --gold: #f7b267;
+  --cream: #fffaf3;
+  --text: #3b2a20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* so the sticky menu doesn't cover titles */
+}
+
+/* ===== Sweet background ===== */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.6) 0, transparent 35%),
+    linear-gradient(160deg, #fff3e0, #ffd9a8 55%, var(--gold));
+  background-attachment: fixed;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 55px 20px 35px;
+  background: linear-gradient(135deg, var(--brown), var(--orange));
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-size: 1.15rem;
+}
+
+/* ===== Navigation (stays at the top when you scroll) ===== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--text);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  padding: 14px 18px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  background: var(--orange);
+  border-bottom-color: var(--gold);
+}
+
+/* ===== Page content ===== */
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+section {
+  background: var(--cream);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--brown);
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 6px;
+}
+
+h3 {
+  color: var(--orange);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figure {
+  margin: 15px 0;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #6b5444;
+}
+
+mark {
+  background: #ffe08a;
+  padding: 0 4px;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 5px 18px;
+  border-left: 5px solid var(--orange);
+  background: #fff1dc;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.1rem;
+}
+
+blockquote footer {
+  background: none;
+  padding: 0;
+  text-align: left;
+  color: var(--text);
+}
+
+ul, ol {
+  padding-left: 25px;
+}
+
+dt {
+  font-weight: bold;
+  color: var(--brown);
+}
+
+dd {
+  margin-bottom: 8px;
+}
+
+/* ===== Price table ===== */
+table {
+  width: 100%;
+  border:color(srgb red green blue)
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+caption {
+  padding: 8px;
+  font-style: italic;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: var(--brown);
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: #fff1dc;
+}
+
+tbody tr:hover {
+  background: #ffe2b8;
+}
+
+/* ===== Special offer box ===== */
+aside {
+  background: #ffe8c7;
+  padding: 12px 20px;
+  border: 2px dashed var(--orange);
+  border-radius: 10px;
+}
+
+/* ===== Form ===== */
+fieldset {
+  border: 1px solid #e0c9a8;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+input, select, textarea {
+  padding: 7px;
+  border: 1px solid #c9b090;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--gold);
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background: var(orange);
+  color: #fff;
+  border: #6b5444;
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: var(--brown);
+}
+
+button[type="reset"] {
+  background: #8c7b6b;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--orange);
+}
+
+a:hover {
+  color: var(--brown);
+}
+
+/* ===== Footer ===== */
+body > footer {
+  background: var(rgb(130, 130, 250));
+  color: #fdc877;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+body > footer a {
+  color: var(--gold);
+}
+
+/* ===== Phones ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    padding: 10px 10px;
+  }
+
+  section {
+    padding: 11px;
+  }
+}
+
+/* ===== Photo gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
