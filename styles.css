@@ -6,7 +6,6 @@
   --cream: #fffaf3;
   --text: #3b2a20;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -15,7 +14,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px; /* so the sticky menu doesn't cover titles */
 }
-
 /* ===== Sweet background ===== */
 body {
   margin: 0;
@@ -27,7 +25,6 @@ body {
     linear-gradient(160deg, #fff3e0, #ffd9a8 55%, var(--gold));
   background-attachment: fixed;
 }
-
 /* ===== Header ===== */
 header {
   text-align: center;
@@ -35,7 +32,6 @@ header {
   background: linear-gradient(135deg, var(--brown), var(--orange));
   color: #fff;
 }
-
 header h1 {
   margin: 0;
   font-size: 3rem;
@@ -55,7 +51,6 @@ nav {
   background: var(--text);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
-
 nav ul {
   list-style: none;
   margin: 0;
@@ -64,7 +59,6 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 nav a {
   display: block;
   padding: 14px 18px;
@@ -73,19 +67,16 @@ nav a {
   border-bottom: 3px solid transparent;
   transition: 0.25s;
 }
-
 nav a:hover {
   background: var(--orange);
   border-bottom-color: var(--gold);
 }
-
 /* ===== Page content ===== */
 main {
   max-width: 850px;
   margin: 30px auto;
   padding: 0 15px;
 }
-
 section {
   background: var(--cream);
   padding: 25px;
@@ -110,17 +101,14 @@ img {
   height: auto;
   border-radius: 10px;
 }
-
 figure {
   margin: 15px 0;
 }
-
 figcaption {
   font-size: 0.9rem;
   font-style: italic;
   color: #6b5444;
 }
-
 mark {
   background: #ffe08a;
   padding: 0 4px;
@@ -141,7 +129,6 @@ blockquote footer {
   text-align: left;
   color: var(--text);
 }
-
 ul, ol {
   padding-left: 25px;
 }
@@ -150,15 +137,13 @@ dt {
   font-weight: bold;
   color: var(--brown);
 }
-
 dd {
   margin-bottom: 8px;
 }
-
 /* ===== Price table ===== */
 table {
   width: 100%;
-  border:color(srgb red green blue)
+  border-collapse: collapse;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -171,13 +156,12 @@ caption {
 th, td {
   padding: 10px;
   text-align: left;
+  border-bottom: 1px solid #e8d9c7;
 }
-
 th {
   background: var(--brown);
   color: #fff;
 }
-
 tbody tr:nth-child(even) {
   background: #fff1dc;
 }
@@ -185,7 +169,6 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background: #ffe2b8;
 }
-
 /* ===== Special offer box ===== */
 aside {
   background: #ffe8c7;
@@ -206,7 +189,6 @@ legend {
   font-weight: bold;
   color: var(--brown);
 }
-
 input, select, textarea {
   padding: 7px;
   border: 1px solid #c9b090;
@@ -221,29 +203,27 @@ input:focus, select:focus, textarea:focus {
 textarea {
   width: 100%;
 }
-
 button {
-  background: var(orange);
-  color: #fff;
-  border: #6b5444;
+  background: var(--blue);
+  color: #f43d3d;
+  border: 1px solid #6b5444;
   padding: 11px 24px;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.25s;
 }
-
 button:hover {
-  background: var(--brown);
+  background: var(--blue);
 }
 
 button[type="reset"] {
-  background: #8c7b6b;
+  background: #4698f1;
 }
 
 /* ===== Links ===== */
 a {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 a:hover {
@@ -252,12 +232,11 @@ a:hover {
 
 /* ===== Footer ===== */
 body > footer {
-  background: var(rgb(130, 130, 250));
+  background: var(--red);
   color: #fdc877;
   text-align: center;
   padding: 25px 15px;
 }
-
 body > footer a {
   color: var(--gold);
 }
